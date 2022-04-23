@@ -11,7 +11,8 @@ function Home() {
           <Link to="/dashboard">Dashboard</Link>
         ) : (
           <Link to="/login">Login</Link>
-        )}
+        )}{" "}
+        | <Link to="/posts">Post List</Link>
       </nav>
       <p style={{ color: "tomato", fontWeight: "bold" }}>This is Home Page.</p>
     </>

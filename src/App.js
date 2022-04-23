@@ -5,6 +5,7 @@ import "./App.css";
 import PrivateRoute from "./components/guards/PrivateRoute";
 import Dashboard from "./components/pages/Dashboard";
 import PublicRoute from "./components/guards/PublicRoute";
+import PostIndex from "./components/pages/PostIndex";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             </PrivateRoute>
           }
         ></Route>
+        <Route path="posts" element={<PostIndex />}></Route>
       </Routes>
     </div>
   );
